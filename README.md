@@ -30,11 +30,6 @@ My personal configuration files for Material-like Kde, inspired by wallpapers.
 
 ```text
 .
-├── .config/            # Configuration files
-├── assets/             # Screenshots for README
-└── README.md           # README
-
-.
 ├── assets
 │   ├── btop.png
 │   ├── kde.png
