@@ -32,7 +32,19 @@ My personal configuration files for Material-like Kde, inspired by wallpapers.
 .
 ├── .config/            # Configuration files
 ├── assets/             # Screenshots for README
-├── chrome/             # CustomCss for FireFox
-├── usr/                # KDE color scheme & wallpaper
-├── postinstall.txt     # Post-install tweaks
 └── README.md           # README
+
+.
+├── assets
+│   ├── btop.png
+│   ├── kde.png
+│   ├── kitty.png
+│   └── wallpaper.png
+├── .config
+│   ├── btop
+│   ├── fastfetch
+│   └── fish
+── README.md
+└── Resources
+    ├── MaterialArch_3840x2160.png
+    └── MaterialArch.colors
