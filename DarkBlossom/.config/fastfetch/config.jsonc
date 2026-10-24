@@ -1,0 +1,67 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "arch",
+        "color": {
+           "1": "#969192",
+           "2": "#eaeaea"
+        }
+    },
+    "display": {
+        "separator": " ➜  "
+    },
+    "modules": [
+        "break",
+        "break",
+        "break",
+        {
+            "type": "title",
+            "color": {
+                "user": "#FFFFFF",
+                "at": "#CCCCCC",
+                "host": "#FFFFFF"
+            }
+        },
+        "break",
+        {
+            "type": "os",
+            "key": "OS  ",
+            "keyColor": "#e9807f"
+        },
+        {
+            "type": "datetime",
+            "key": "CLK ",
+            "format": "{hour-pretty}:{minute-pretty} @ {day-pretty}.{month-pretty}.{year-short}",
+            "keyColor": "#e9807f"
+        },
+        {
+            "type": "uptime",
+            "key": "UPT ",
+            "format": "{formatted}",
+            "keyColor": "#e9807f"
+        },
+        {
+            "type": "media",
+            "key": "SND ",
+            "format": "lua:local s=(...).combined; if type(s)~='string' or s=='' then return '' end; local c=0; local i=1; while i<=#s do c=c+1; if c==52 then break end; local b=string.byte(s,i); if b<128 then i=i+1 elseif b<224 then i=i+2 elseif b<240 then i=i+3 else i=i+4 end end; if i<=#s then return string.sub(s,1,i-1)..'...' else return s end",
+            "keyColor": "#e9807f"
+        },
+        {
+            "type": "cpu",
+            "format": "{name}",
+            "key": "CPU ",
+            "keyColor": "#e9807f"
+        },
+        {
+            "type": "gpu",
+            "key": "GPU ",
+            "format": "{name}",
+            "keyColor": "#e9807f"
+        },
+        "break",
+        {
+            "type": "colors",
+            "symbol": "block"
+        }
+    ]
+}

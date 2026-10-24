@@ -1,0 +1,11 @@
+set enable-bracketed-paste off
+set editing-mode vi
+set show-all-if-ambiguous on
+set colored-stats On
+set mark-directories On
+set bell-style none
+
+set editing-mode vi
+set show-mode-in-prompt off
+set vi-cmd-mode-string "\1\e[31;1m\2[N]\1\e[0m\2 "
+set vi-ins-mode-string "\1\e[34;1m\2[I]\1\e[0m\2 "
